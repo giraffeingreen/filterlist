@@ -2,11 +2,6 @@
 x.com##*
 ||twitter.com^$document
 twitter.com##*
-||youtube.com^$document
-||www.youtube.com^$document
-@@||youtube.com/watch^$document
-||reddit.com^$document
-@@||reddit.com/r^$document
 ||news.google.com^$document
 news.google.com##*
 ||daily.dev^$document
@@ -17,3 +12,7 @@ medium.com##*
 linkedin.com##*
 ||github.com/trending^$document
 github.com##html:has(meta[content='trending'][name='route-controller'])
+|https://www.reddit.com^
+@@||reddit.com/r/^
+|https://www.youtube.com^
+@@||youtube.com/watch^
