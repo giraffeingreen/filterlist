@@ -12,7 +12,3 @@ medium.com##*
 linkedin.com##*
 ||github.com/trending^$document
 github.com##html:has(meta[content='trending'][name='route-controller'])
-||reddit.com^
-@@||reddit.com/r/
-||youtube.com^
-@@||youtube.com/watch
