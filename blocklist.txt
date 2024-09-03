@@ -12,3 +12,24 @@ medium.com##*
 linkedin.com##*
 ||github.com/trending^$document
 github.com##html:has(meta[content='trending'][name='route-controller'])
+
+! Block the main Reddit page, specific URL patterns, and explore page
+||reddit.com^$document
+||reddit.com/?feed=home$document
+||reddit.com/explore$document
+
+! Allow subreddit pages and necessary content
+@@||reddit.com/r/*
+@@||reddit.com/user/*
+@@||reddit.com/api/*
+@@||reddit.com/static/*
+@@||reddit.com/embed/*
+
+! Optional: Hide specific elements that might link back to the main page
+reddit.com##a[href="/"]
+reddit.com##a[href^="/r/all"]
+reddit.com##a[href^="/r/popular"]
+reddit.com##a[href="/best"]
+reddit.com##a[href="/?feed=home"]
+reddit.com##a[href="/explore"]
+reddit.com##reddit-sidebar-nav#left-sidebar
